@@ -3,112 +3,103 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Здесь должны быть три тега c сервиса Google fonts для подключения шрифтов  -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
-
-    <link rel="stylesheet" href="style.css">
     <title>It-incubator precourse</title>
 </head>
-<body data-cy="hw2-body-pre">
-    <!-- Cоздай html-элементы в соответствии с правилами семантической разметки: -->
+<body>
+    <!-- ЗАДАНИЕ -->
+    <!-- Необходимо создать html-элементы в соответствии с правилами семантической разметки там, где это нужно -->
+    <!-- ⚠️ Атрибут data-cy удалять нельзя! Он учавствует в проверке. Если его удалить, тесты не пройдут. -->
 
-    <!-- 1) В первом разделе создай 3 дочерних элемента: -->
-
-    <!-- 1.1) Заголовок первого уровня со своим ФИО -->
-
-    <!-- 1.2) Несколько строк о себе: где учишься или работаешь, хобби, увлечения. Используй тег для абзаца. Длина строки должна быть больше 50-ти симвов (пробелы и др знаки припинания тоже считаются символом) -->
-
-    <!-- 1.3) Фото или любую картинку из интернета) -->
-
-    <!-- 2) Во втором разделе создай следующие дочерние элементы: -->
-
-    <!-- 2.1) Выпадающий список с разными городами. Свой город сделай НЕ первым в этом списке. С помощью специального атрибута, сделай так, чтобы твой город всегда был выбранным по умолчанию  -->
-
-    <!-- 2.2) Группу элементов, состоящую из заголовка 2-го уровня (любимые книги/фильмы/блюда/страны..что захочешь) и маркированного списка. В списке должно быть не менее 3-х элементов -->
-
-    <!-- 2.3) Группу элементов, состоящую из другого заголовка 2-го уровня (любимые книги/фильмы/блюда/страны..что захочешь) и нумерованного (упорядоченного) списка. В списке должно быть не менее 3-х элементов -->
-
-    <!-- 2.4) Группу элементов, состоящую из заголовка второго уровня "Мои скиллы" и нескольких чекбоксов с подписью (не меньше 3-х). В подпись укажи названия тем в верстке (все, что знаешь или слышал) и отметь с помощью специального атрибута те, которые ты уже знаешь. -->
-
-    <!-- 2.5) Однострочное поле ввода для текста с подсказкой "Новый скилл", которая исчезает, когда начинаешь что-то печатать -->
-
-    <!-- 2.6) Кнопку “Добавить” -->
-
-    <!-- 2.7) Горизонтальную линию (для этого есть специальный тег) -->
-
-    <!-- 2.8) В таблице 5 строк и 3 столбца. Добавь границы для всей таблицы с помощью специального атрибута border=“1 | 0” (1 - есть границы, 0 - нет границ). В последнем ряду объедини 2 первых ячейки по горизонтали. Данные - какие захочешь -->
-
-    <!-- 3) В футере добавь ссылку на наш сайт https://it-incubator.io/ (на экране должно быть it-incubator) -->
-
-    <header data-cy="hw2-header">
-        <span data-cy="hw2-header-span">IT-INCUBATOR</span>
+    <header>
+        <span>IT-INCUBATOR</span>
     </header>
 
-    <section class="main-section" data-cy="hw2-section-main-pre">
-        <h1 class="main-title" data-cy="hw2-main-title">Иванов Иван Иванович</h1>
-        <p class="main-text" data-cy="hw2-text">Работаю в IT-INCUBATOR-е. Люблю HTML, CSS и все, что связано с frontend разработкой.</p>
-        <img class="main-image" data-cy="hw2-main-image" src="https://abbtech.az/storage/uploads/files/1687508692_1615533694-frontendd.svg" alt="">
+    <section data-cy="hw1-section-main-pre">
+        <!-- 1) В этом разделе создай 3 дочерних элемента: -->
+
+        <!-- a) Заголовок первого уровня со своим ФИО -->
+        <!-- b) Несколько строк о себе: где учишься или работаешь, хобби, увлечения. Используй тег для абзаца. Длина строки должна быть больше 50-ти симвов (пробелы и др знаки припинания тоже считаются символом) -->
+        <!-- c) Фото (или любую картинку из интернета). Не забудь добавить описание на случай, если изображение не загрузится -->
+
+        <h1>Иванов Иван Иванович</h1>
+        <p>Работаю в IT-INCUBATOR-е. Люблю HTML, CSS и все, что связано с frontend разработкой.</p>
+        <img src="https://abbtech.az/storage/uploads/files/1687508692_1615533694-frontendd.svg" alt="frontend dev">
     </section>
 
-    <section class="about-section" data-cy="hw2-section-about-pre">
-        <select data-cy="hw2-select-pre" name="" id="">
+    <section data-cy="hw1-section-about-pre">
+        <!-- 2) В этом разделе создай следующие дочерние элементы: -->
+        
+        <!-- a) Выпадающий список с разными городами (не меньше 3-х). Свой город сделай вторым в этом списке. С помощью специального атрибута, сделай так, чтобы твой город всегда был выбранным по умолчанию  -->
+        <select>
             <option value="">Paris</option>
             <option value="" selected>Minsk</option>
             <option value="">Milan</option>
         </select>
 
-        <div>
-            <h2 class="section-title" data-cy="hw2-section-title-pre">Любимые фреймворки</h2>
-            <ul class="skills-list" data-cy="hw2-skills-list-pre">
+        <div data-cy="hw1-unordered-list-box-pre">
+            <!-- b) Заголовок 2-го уровня (любимые книги/фильмы/блюда/страны... и т.п.) -->
+            <!-- c) Маркированный список. В списке должно быть не менее 3-х элементов -->
+            <h2>Любимые фреймворки</h2>
+            <ul>
                 <li>React</li>
                 <li>Angular</li>
                 <li>Vue</li>
             </ul>
         </div>
-        <div>
-            <h2 class="section-title" data-cy="hw2-section-title-pre">Рейтинг любимых книг</h2>
-            <ol class="books-list" data-cy="hw2-books-list-pre">
+        <div data-cy="hw1-ordered-list-box-pre">
+            <!-- d) Заголовок 2-го уровня с другим названием (любимые книги/фильмы/блюда/страны... и т.п.) -->
+            <!-- e) Нумерованный (упорядоченный) список. В списке должно быть не менее 3-х элементов -->
+            <h2>Рейтинг любимых книг</h2>
+            <ol>
                 <li>HTML5+CSS3. Основы современного web-дизайна</li>
                 <li>HTML5, CSS3 и JavaScript. Исчерпывающее руководство</li>
                 <li>HTML5+CSS3. Разработка сайтов для любых браузеров и устройств. 2-е издание</li>
             </ol>
         </div>
-        <div>
-            <h2 class="section-title" data-cy="hw2-section-title-pre">Мои скиллы</h2>
-            <label class="label" data-cy="hw2-label-pre" for="1">
-                <input type="checkbox" checked name="" id="1">
+        <div data-cy="hw1-skills-box-pre">
+            <h2>Мои скиллы</h2>
+            <!-- f) Несколько чекбоксов с подписью (не меньше 3-х). 
+                - В подписи укажи названия любых тем в верстке (все, что знаешь или слышал). 
+                - Каждый чекбокс должен быть связан со своей подписью. Для этого чекбокс должен находиться в элементе для подписи
+                - Отметь "галочкой" (с помощью специального атрибута) темы, которые ты уже знаешь. -->
+            
+            <label>
+                <input type="checkbox" checked>
                 HTML5
             </label>
     
-            <label class="label" data-cy="hw2-label-pre" for="2">
-                <input type="checkbox" checked name="" id="2">
+            <label for="2">
+                <input type="checkbox" checked>
                 CSS3
             </label>
     
-            <label class="label" data-cy="hw2-label-pre" for="3">
+            <label for="3">
                 <input type="checkbox" name="" id="3">
                 JavaScript
             </label>
     
-            <label class="label" data-cy="hw2-label-pre" for="4">
+            <label for="4">
                 <input type="checkbox" name="" id="4">
                 Jquery
             </label>
     
-            <label class="label" data-cy="hw2-label-pre" for="5">
+            <label for="5">
                 <input type="checkbox" name="" id="5">
                 React
             </label>
         </div>
+        <!-- g) Однострочное поле для ввода текста с подсказкой "Новый скилл", которая исчезает, когда начинаешь что-то печатать (для подсказки есть специальный атрибут) -->
+        <input type="text" placeholder="Новый скилл">
+        <!-- h) Кнопку “Добавить” -->
+        <button>Добавить</button>
+        <!-- i) Горизонтальную линию (для этого есть специальный тег) -->
+        <hr>
         
-        <input class="text-field" data-cy="hw2-text-field-pre" type="text" placeholder="Новый скилл">
-        <button class="btn" data-cy="hw2-btn-pre">Добавить</button>
-        
-        <hr class="line" data-cy="hw2-line-pre">
-
-        <table data-cy="hw2-about-table-pre" border="1">
+        <table data-cy="hw-about-table-pre" border="1">
+            <!-- j) В таблице сделай 5 строк и 3 столбца. 
+                        - В первой строке ячейки заголовков, в остальных обычные ячейки
+                        - Добавь границы для всей таблицы с помощью специального атрибута border="". Он устарел, но работает
+                        - В последнем ряду первая ячейка должна занимать все свободное место по горизонтали (ширине). Таблицу можно заполнять любыми данными -->
             <tr>
                 <th>п/п</th>
                 <th>Наименование</th>
@@ -137,7 +128,8 @@
     </section>
 
     <footer data-cy="hw-footer-pre">
-        <a class="footer-link" data-cy="hw-footer-link-pre" href="https://it-incubator.io/">it-incubator</a>
+        <!-- a) Ссылка на наш сайт https://it-incubator.io/ (на экране должно быть it-incubator) -->
+        <a href="https://it-incubator.io/">it-incubator</a>
     </footer>
 </body>
 </html>
