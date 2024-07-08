@@ -9,10 +9,10 @@
     <link rel="stylesheet" href="style.css">
     <title>It-incubator precourse</title>
 </head>
-<body>
-    <header>
+<body data-cy="hw-4-body-pre">
+    <header data-cy="hw-4-header">
         <div class="container">
-            <span>IT-INCUBATOR</span>
+            <span data-cy="hw-4-header-span">IT-INCUBATOR</span>
         </div>
     </header>
 
@@ -21,7 +21,7 @@
             <div class="wrapper" data-cy="hw-4-section-main-wrapper-pre">
                 <div class="text-wrapper" data-cy="hw-4-text-wrapper-pre">
                     <h1 class="main-title" data-cy="hw-4-main-title">Иванов Иван Иванович</h1>
-                    <p class="main-text">Работаю в IT-INCUBATOR-е. Люблю HTML, CSS и все, что связано с frontend разработкой.</p>
+                    <p class="main-text" data-cy="hw-4-text">Работаю в IT-INCUBATOR-е. Люблю HTML, CSS и все, что связано с frontend разработкой.</p>
                 </div>
                 <img class="main-image" data-cy="hw-4-main-image" src="https://abbtech.az/storage/uploads/files/1687508692_1615533694-frontendd.svg" alt="">
             </div>
@@ -31,24 +31,24 @@
     <section class="about-section" data-cy="hw-4-section-about-pre">
         <div class="container">
             <div class="wrapper" data-cy="hw-4-section-about-wrapper-pre">
-                <select name="" id="">
+                <select data-cy="hw-4-select-pre" name="" id="">
                     <option value="">Paris</option>
                     <option value="" selected>Minsk</option>
                     <option value="">Milan</option>
                 </select>
         
                 <div class="info-wrapper" data-cy="hw-4-info-wrapper-pre">
-                    <div class="frameworks">
-                        <h2 class="section-title">Любимые фреймворки</h2>
-                        <ul class="frameworks-list">
+                    <div class="frameworks" data-cy="hw-4-frameworks-pre">
+                        <h2 class="section-title" data-cy="hw-4-section-title-pre">Любимые фреймворки</h2>
+                        <ul class="frameworks-list" data-cy="hw-4-frameworks-list-pre">
                             <li>React</li>
                             <li>Angular</li>
                             <li>Vue</li>
                         </ul>
                     </div>
                     <div class="books" data-cy="hw-4-books-pre">
-                        <h2 class="section-title">Рейтинг любимых книг</h2>
-                        <ol class="books-list">
+                        <h2 class="section-title" data-cy="hw-4-section-title-pre">Рейтинг любимых книг</h2>
+                        <ol class="books-list" data-cy="hw-4-books-list-pre">
                             <li>HTML5+CSS3. Основы современного web-дизайна</li>
                             <li>HTML5, CSS3 и JavaScript. Исчерпывающее руководство</li>
                             <li>HTML5+CSS3. Разработка сайтов для любых браузеров и устройств. 2-е издание</li>
@@ -57,47 +57,47 @@
                 </div>
                 
                 <div class="skills-wrapper">
-                    <h2 class="section-title">Мои скиллы</h2>
+                    <h2 class="section-title" data-cy="hw-4-section-title-pre">Мои скиллы</h2>
     
-                    <div class="skills-block">
-                        <div class="skills">
-                            <label class="label" for="1">
+                    <div class="skills-block" data-cy="hw-4-skills-block-pre">
+                        <div class="skills" data-cy="hw-4-skills-pre">
+                            <label class="label" data-cy="hw-4-label-pre" for="1">
                                 <input type="checkbox" checked name="" id="1">
                                 HTML5
                             </label>
                     
-                            <label class="label" for="2">
+                            <label class="label" data-cy="hw-4-label-pre" for="2">
                                 <input type="checkbox" checked name="" id="2">
                                 CSS3
                             </label>
                     
-                            <label class="label" for="3">
+                            <label class="label" data-cy="hw-4-label-pre" for="3">
                                 <input type="checkbox" name="" id="3">
                                 JavaScript
                             </label>
                     
-                            <label class="label" for="4">
+                            <label class="label" data-cy="hw-4-label-pre" for="4">
                                 <input type="checkbox" name="" id="4">
                                 Jquery
                             </label>
                     
-                            <label class="label" for="5">
+                            <label class="label" data-cy="hw-4-label-pre" for="5">
                                 <input type="checkbox" name="" id="5">
                                 React
                             </label>
                         </div>
         
                         <form>
-                            <input class="text-field" type="text" placeholder="Новый скилл">
-                            <button class="btn">Добавить</button>
+                            <input class="text-field" data-cy="hw-4-text-field-pre" type="text" placeholder="Новый скилл">
+                            <button class="btn" data-cy="hw-4-btn-pre">Добавить</button>
                         </form>
                     </div>
                 </div>
             </div>
 
-            <hr class="line">
+            <hr class="line" data-cy="hw-4-line-pre">
     
-            <table border="1">
+            <table data-cy="hw-4-about-table-pre" border="1">
                 <tr>
                     <th>п/п</th>
                     <th>Наименование</th>
@@ -126,8 +126,8 @@
         </div>
     </section>
 
-    <footer>
-        <a class="footer-link" href="https://it-incubator.io/">it-incubator</a>
+    <footer data-cy="hw-4-footer-pre">
+        <a class="footer-link" data-cy="hw-4-footer-link-pre" href="https://it-incubator.io/">it-incubator</a>
     </footer>
 </body>
 </html>
